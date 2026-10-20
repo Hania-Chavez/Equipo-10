@@ -2,6 +2,11 @@
 Adivina el número
 
 # Adivina el Número
+## Equipo 
+
+* Oscar Alejandro Penilla Skakievich 
+
+* Hania Fernanda Chavez Camberos
 
 ### Descripción del Juego
 
@@ -33,9 +38,3 @@ El juego genera un número oculto dentro de un rango definido según la dificult
    ```
 
 4. Sigue las instrucciones en pantalla para ingresar tu nombre, elegir la dificultad y comenzar a jugar.
-
-## Equipo 
-
-* Oscar Alejandro Penilla Skakievich 
-
-* Hania Fernanda Chavez Camberos
