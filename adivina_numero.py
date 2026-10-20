@@ -28,7 +28,7 @@ def choose_difficulty():
         return DIFFICULTIES[choice]
 
     print("Opción inválida. Se usará la dificultad Fácil.")
-    return DIFFICULTIES["2"]
+    return DIFFICULTIES["1"]
 
 
 def read_guess(minimum, maximum):
@@ -52,7 +52,7 @@ def calculate_score(attempts_used, maximum_attempts, won):
 
 def play_round(settings):
     secret_number = random.randint(settings["minimum"], settings["maximum"])
-    attempts_used = 0
+    attempts_used = 1
     guess = None
     won = False
 
@@ -134,7 +134,7 @@ def play_game(scores):
 
 
 def ask_to_play_again():
-    answer = input("\n¿Quieres jugar otra vez? (s/n): ").lower()
+    answer = input("\n¿Quieres jugar otra vez? (s/n): ").lower().strip()
     if answer == "s" or answer == "si" or answer == "sí":
         return True
     return False
