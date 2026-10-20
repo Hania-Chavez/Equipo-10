@@ -52,7 +52,7 @@ def calculate_score(attempts_used, maximum_attempts, won):
 
 def play_round(settings):
     secret_number = random.randint(settings["minimum"], settings["maximum"])
-    attempts_used = 0
+    attempts_used = 1
     guess = None
     won = False
 
