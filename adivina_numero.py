@@ -66,11 +66,17 @@ def play_round(settings):
         attempts_used += 1
 
         if guess is None:
+            attempts_used -= 1
             continue
+        elif isinstance(guess, int) is False:
+            print("La entrada debe ser un número entero.")
+            attempts_used -= 1
         elif guess < settings["minimum"]:
             print("El número es menor que el rango permitido.")
+            attempts_used -= 1
         elif guess > settings["maximum"]:
             print("El número es mayor que el rango permitido.")
+            attempts_used -= 1
         elif guess < secret_number:
             print("Muy bajo.")
         elif guess > secret_number:
